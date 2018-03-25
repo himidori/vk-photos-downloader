@@ -3,7 +3,7 @@ package main
 import (
 	"net/url"
 
-	"github.com/himidori/vkapi"
+	"github.com/himidori/golang-vk-api"
 )
 
 func getAttachments(client *vkapi.VKClient, UID int) ([]*vkapi.PhotoAttachment, error) {

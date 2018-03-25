@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/himidori/vkapi"
+	"github.com/himidori/golang-vk-api"
 )
 
 func folderExists(name string) bool {

@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/himidori/vkapi"
+	"github.com/himidori/golang-vk-api"
 )
 
 func getDialogs(client *vkapi.VKClient) ([]*vkapi.DialogMessage, error) {
@@ -14,7 +14,7 @@ func getDialogs(client *vkapi.VKClient) ([]*vkapi.DialogMessage, error) {
 
 	for {
 		params.Set("offset", strconv.Itoa(offset))
-		dialogs, err := client.GetDialogs(200, params)
+		dialogs, err := client.DialogsGet(200, params)
 		if err != nil {
 			return nil, err
 		}

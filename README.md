@@ -10,3 +10,13 @@
 -d : device to use for authorization (0 - iPhone, 1 - android, 2 - WPhone)
 -h : print help
 ```
+
+# example of usage
+downloading photos from one dialog using 20 goroutines, authorizing by login and password
+```
+./vkphotos -u xxx -p xxx -uid xxx -r 20
+```
+downloading photos from every dialog using 20 goroutines, authorizing by token
+```
+./vkphotos -t xxx -r 20
+```
